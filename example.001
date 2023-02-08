@@ -1,0 +1,18 @@
+import random
+
+array = [random.randint(1,100) for i in range(9)]
+def bubble(array):
+  sorted=False
+  while not(sorted):
+    sorted=True
+    for i in range(len(array)-1):
+      if array[i]>array[i+1]:
+        sorted=False
+        temp=array[i+1]
+        array[i+1]=array[i]
+        array[i]=temp
+  print(array)
+bubble(array)
+      
+
+  
